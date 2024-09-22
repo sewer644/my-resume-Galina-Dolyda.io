@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Лаборант | Спеціаліст з лабораторних досліджень</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="background-animation">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="glow">
+                <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+
+        <!-- Test Tubes -->
+        <g filter="url(#glow)">
+            <path d="M25 0 L35 0 L35 40 Q30 50 25 40 Z" fill="#3498db" opacity="0.6">
+                <animateMotion path="M0 0 Q50 40 100 0 T200 0" dur="20s" repeatCount="indefinite"/>
+                <animateTransform attributeName="transform" type="rotate" from="0 30 20" to="360 30 20" dur="10s" repeatCount="indefinite"/>
+            </path>
+        </g>
+        
+        <g filter="url(#glow)">
+            <path d="M25 0 L35 0 L35 40 Q30 50 25 40 Z" fill="#e74c3c" opacity="0.6">
+                <animateMotion path="M200 50 Q150 90 100 50 T0 50" dur="25s" repeatCount="indefinite"/>
+                <animateTransform attributeName="transform" type="rotate" from="0 30 20" to="-360 30 20" dur="12s" repeatCount="indefinite"/>
+            </path>
+        </g>
+
+        <!-- Microscope -->
+        <g filter="url(#glow)">
+            <path d="M10 50 L30 30 L50 50 L30 70 Z M30 50 L30 90" stroke="#2c3e50" stroke-width="2" fill="none" opacity="0.8">
+                <animateTransform attributeName="transform" type="rotate" from="0 30 50" to="360 30 50" dur="20s" repeatCount="indefinite"/>
+                <animateMotion path="M0 0 Q100 100 200 0 T400 0" dur="40s" repeatCount="indefinite"/>
+            </path>
+        </g>
+
+        <!-- Molecules -->
+        <g filter="url(#glow)">
+            <circle cx="50" cy="50" r="5" fill="#9b59b6" opacity="0.7">
+                <animate attributeName="r" values="5;7;5" dur="6s" repeatCount="indefinite"/>
+                <animateMotion path="M0 0 Q100 100 200 0 T400 0" dur="40s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="60" cy="50" r="5" fill="#9b59b6" opacity="0.7">
+                <animate attributeName="r" values="5;7;5" dur="6s" repeatCount="indefinite"/>
+                <animateMotion path="M0 0 Q100 100 200 0 T400 0" dur="40s" repeatCount="indefinite"/>
+            </circle>
+            <line x1="50" y1="50" x2="60" y2="50" stroke="#9b59b6" stroke-width="2" opacity="0.7">
+                <animateMotion path="M0 0 Q100 100 200 0 T400 0" dur="40s" repeatCount="indefinite"/>
+            </line>
+        </g>
+
+        <!-- Medical Cross -->
+        <g filter="url(#glow)">
+            <path d="M20 0 V40 M0 20 H40" stroke="#e74c3c" stroke-width="4" opacity="0.7">
+                <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="30s" repeatCount="indefinite"/>
+                <animateMotion path="M0 0 Q200 200 400 0" dur="60s" repeatCount="indefinite"/>
+            </path>
+        </g>
+    </svg>
+</div>
+<main>
+    <section id="about">
+        <h1>Галина Долуда</h1>
+        <h2>Лаборант | Спеціаліст з лабораторних досліджень</h2>
+        <p>Досвідчений лаборант з глибокими знаннями в області лабораторних досліджень та аналізу. Спеціалізуюсь на проведенні складних аналізів, управлінні лабораторним обладнанням та впровадженні інноваційних методик дослідження.</p>
+    </section>
+    <section id="experience">
+        <h2>Досвід роботи</h2>
+        <ul>
+            <li style="--item-index: 0;">
+                <strong>Старший лаборант, Медична лабораторія "ЛабТест" (2018 - теперішній час)</strong>
+                <br>Проведення складних лабораторних аналізів, калібрування та обслуговування обладнання, навчання нових співробітників, контроль якості досліджень.
+            </li>
+            <li style="--item-index: 1;">
+                <strong>Лаборант, Діагностичний центр "МедДіагностика" (2015 - 2018)</strong>
+                <br>Проведення рутинних лабораторних тестів, підготовка зразків, ведення документації, асистування в складних дослідженнях.
+            </li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Ключові навички</h2>
+        <ul>
+            <li style="--item-index: 2;">Проведення лабораторних аналізів</li>
+            <li style="--item-index: 3;">Робота з лабораторним обладнанням</li>
+            <li style="--item-index: 4;">Мікроскопія та гістологія</li>
+            <li style="--item-index: 5;">Контроль якості досліджень</li>
+            <li style="--item-index: 6;">Знання лабораторних стандартів та процедур</li>
+            <li style="--item-index: 7;">Робота з лабораторними інформаційними системами</li>
+            <li style="--item-index: 8;">Навички міжособистісного спілкування</li>
+        </ul>
+    </section>
+    <section id="achievements">
+        <h2>Досягнення</h2>
+        <ul>
+            <li style="--item-index: 9;">Впровадження нової методики аналізу, що скоротила час обробки зразків на 30%</li>
+            <li style="--item-index: 10;">Розробка системи контролю якості, яка підвищила точність результатів на 15%</li>
+            <li style="--item-index: 11;">Участь у дослідницькому проекті, результати якого були опубліковані в престижному науковому журналі</li>
+        </ul>
+    </section>
+    <section id="education">
+        <h2>Освіта</h2>
+        <ul>
+            <li style="--item-index: 12;">
+                <strong>Кафедра медичної лабораторної діагностики, Національний медичний університет  (2011 - 2015)</strong>
+                <br>Спеціалізація: Лабораторна діагностика
+            </li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Контактна інформація</h2>
+        <p>Email: labtech.example@mail.com</p>
+        <p>Телефон: (095) 131-0851</p>
+    </section>
+</main>
+<button id="scrollToTop" title="Go to top">↑</button>
+<div id="contactFloating" class="contact-floating">
+    <div class="contact-header">
+        <h3>Контакти</h3>
+        <button id="closeContact">×</button>
+    </div>
+    <div class="contact-content">
+        <p><strong>Email:</strong> labtech.example@mail.com</p>
+        <p><strong>Телефон:</strong> (095) 131-0851</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
